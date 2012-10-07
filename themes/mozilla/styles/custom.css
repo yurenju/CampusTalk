@@ -1,0 +1,47 @@
+/* Cover */
+#Cover section header {
+  right: 15%;
+  text-align: left;
+  position: absolute;
+}
+#Cover section header h2 {
+  font-size: 40px;
+  color: #EEE;
+}
+#Cover section header h3 {
+    font-size: 30px;
+}
+#Cover .byline {
+  color: #6A7B86;
+  text-align: left;
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+}
+#Cover img {
+	left:30%;
+}
+
+#StoryBegin h2 {
+  position: absolute; 
+  top: 3%; 
+  font-size: 30px;
+}
+#StoryBegin img {
+	top:50%;
+	left:0;
+	width:100%;
+	height:auto;
+}
+
+#Mission footer {
+  position: absolute; 
+  right: 15%; 
+}
+
+#ClosedPlatform h2 {
+  position: absolute; 
+  top: 40%; 
+  color: black;
+  font-size: 48px;
+}
