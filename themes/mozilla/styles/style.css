@@ -104,7 +104,7 @@ BODY {
 /* Lists */
 .slide ol,
 .slide ul {
-	margin:0 0 45px;
+	margin:0 45px;
 	counter-reset:list;
 	}
 	.slide ul ul,
