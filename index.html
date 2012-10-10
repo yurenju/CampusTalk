@@ -43,11 +43,11 @@
 				<h3>Boot to Gecko (B2G)</h3>
 			</header>
       <img src="pictures/homescreen.jpg">
-			<footer class="byline">
+			<div class="byline">
         Evelyn Hung
         <div>- Mozilla Developer</div>
         <div>- NTU alumna</div>
-      </footer>
+      </div>
 		</section>
 	</div></div>
 
@@ -69,25 +69,26 @@
 		</section>
 	</div></div>
 
-	<div class="slide" id="Challenge"><div>
+	<div class="slide quote" id="FirefoxOS"><div>
 		<section>
 			<header>
         <h2>「為開放的 Web 而打造的作業系統」</h2>
 			</header>
-			<ul>
-				<li><strong>New web APIs:</strong> build prototype APIs for exposing device and OS capabilities to content (Telephony, SMS, Camera, USB, Bluetooth, NFC, etc.) </li>
-				<li><strong>Privilege model:</strong> making sure that these new capabilities are safely exposed to pages and applications </li>
-				<li><strong>Booting:</strong> prototype a low-level substrate for mobile devices (phones and tablets)</li>
-				<li><strong>Applications:</strong> choose and port or build apps to prove out and prioritize the power of the system. </li>
-			</ul>
+      <blockquote>
+      Firefox OS 是一個新的行動裝置作業系統，由 Mozilla 的 Boot to Gecko (B2G) 專案開發。它使用 Linux 核心，開機之後進入以 Gecko 為基礎的執行引擎（Runtime Engine）讓用戶<strong>執行完全透過 HTML、JavaScript 及其他開放網路程式 API（Open Web Applicaiton APIs）所開發的程式</strong>。
+      </blockquote>
+      <footer>
+        <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS" target="_blank">- Mozilla Developer Network</a>
+      </footer>
 		</section>
 	</div></div>
 
-	<div class="slide shout" id="WhyFirefoxOS"><div>
+	<div class="slide shout" id="WhyFirefoxOS-user"><div>
 		<section>
 			<header>
 				<h2>為什麼 Mozilla 要做<br>Firefox OS？</h2>
 			</header>
+      <p class="desc">對消費者來說 &gt;&gt; </p>
 		</section>
 	</div></div>
 
@@ -97,15 +98,51 @@
 				<h2>欸～這個 App 在安桌椅(哀鳳)有嗎？</h2>
 			</header>
 			<img src="pictures/app_store_3.png" alt="">
+      <p class="desc">目前手機 App 將用戶捆綁到特定的作業系統及裝置上。
+      <br>網路的發展則相反，網路使內容能在任何裝置上提供相近的體驗。</p>
 		</section>
 	</div></div>
 
-	<div class="slide" id="GooglePrefers"><div>
+	<div class="slide quote" id="TwoChoices"><div>
+		<section>
+			<header>
+        <h2>價格比一比</h2>
+			</header>
+			<div class="img-container"><img src="pictures/price.png" alt=""></div>
+      <p class="desc">以功能性手機的價格，提供入門至中階的智慧型手機</p>
+      <footer>
+        <a href="http://www.sogi.com.tw">手機王 - http://www.sogi.com.tw/</a>
+      </footer>
+		</section>
+	</div></div>
+
+	<div class="slide shout" id="WhyFirefoxOS-dev"><div>
+		<section>
+			<header>
+				<h2>為什麼 Mozilla 要做<br>Firefox OS？</h2>
+			</header>
+      <p class="desc">對開發者來說 &gt;&gt; </p>
+		</section>
+	</div></div>
+
+	<div class="slide quote" id="GooglePrefers"><div>
 		<section>
 			<header>
 				<h2>開放原始碼就是真的開放嗎？</h2>
 			</header>
-			<a href="http://yowureport.com/?p=2027"><img src="pictures/Google.png" alt=""></a>
+			<div class="img-container"><img src="pictures/Google.png" alt=""></div>
+      <footer>
+        <a href="http://yowureport.com/?p=2027">Spencer Liu@有物報告 - http://yowureport.com</a>
+      </footer>
+		</section>
+	</div></div>
+
+	<div class="slide" id="HTMLPower"><div>
+		<section>
+			<header>
+				<h2>HTML5 - 正在改變 Web 的未來</h2>
+			</header>
+			<div class="img-container"><img src="pictures/html5.png" alt=""></div>
 		</section>
 	</div></div>
 
@@ -115,6 +152,16 @@
 				<h2>Mozilla 認為...</h2>
 			</header>
 			<ol>
+				<li>使用者應該有更多的選擇
+					<ul>
+						<li>不想選擇 ≠ 願意失去選擇</li>
+					</ul>
+				</li>
+        <li>填補行動市場的空缺
+          <ul>
+            <li>低階的硬體上媲美 Android 中階硬體的智慧型手機體驗</li>
+          </ul>
+        </li>
 				<li>App 開發者不該受任何平台廠商的控制
 					<ul>
 						<li>以開放的 Web API 開發應用，達到真正的跨平台</li>
@@ -125,12 +172,24 @@
 						<li>公開開發中的原始碼、會議討論</li>
 					</ul>
         </li>
-				<li>使用者應該有更多的選擇
-					<ul>
-						<li>不想選擇 ≠ 願意失去選擇</li>
-					</ul>
-				</li>
 			</ol>
+		</section>
+	</div></div>
+
+	<div class="slide quote" id="Challenge"><div>
+		<section>
+			<header>
+        <h2>致力於標準化</h2>
+			</header>
+			<ul>
+				<li><strong>新的 web APIs:</strong> 用網頁技術直接操控硬體(電話、簡訊、相機、USB、藍牙...)的能力</li>
+				<li><strong>權限控管機制:</strong> 確保新的操控能力對所有 web 應用是安全的</li>
+				<li><strong>開機驅動:</strong> 對行動裝置(手機、平板)有最基本的開機驅動方式</li>
+				<li><strong>應用(app):</strong> 一組內建能夠展示系統基本功能的應用 </li>
+			</ul>
+			<footer>
+        - <a href="https://wiki.mozilla.org/Booting_to_the_Web" target="_blank">MozillaWiki: Booting to the Web</a>
+      </footer>
 		</section>
 	</div></div>
 
@@ -143,12 +202,12 @@
 		</section>
 	</div></div>
 
-	<div class="slide" id="Gecko"><div>
+	<div class="slide quote" id="Gecko"><div>
 		<section>
 			<header>
 				<h2>Gecko - Firefox Engine</h2>
 			</header>
-      <p><img src="pictures/browser_component.png" alt=""></p>
+      <div class="img-container"><img src="pictures/browser_component.png" alt=""></div>
       <footer>
         <a target="_blank" href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">How Browsers Work</a>
       </footer>
@@ -176,6 +235,13 @@
 			<header>
 				<h2>Gaia</h2>
 			</header>
+      <div class="img-container"><img src="pictures/gaia.png" alt=""></div>
+		</section>
+	</div></div>
+
+	<div class="slide" id="GaiaIframe"><div>
+		<section>
+      <div class="img-container"><img src="pictures/iframes.png" alt=""></div>
 		</section>
 	</div></div>
 
@@ -184,6 +250,9 @@
 			<header>
 				<h2>如果你也想寫 App</h2>
 			</header>
+			<ul>
+				<li>只要熟悉 web 技術 (HTML/JavaScript/CSS)</li>
+      </ul>
 		</section>
 	</div></div>
 
