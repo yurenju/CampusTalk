@@ -54,7 +54,7 @@
 	<div class="slide" id="StoryBegin"><div>
 		<section>
       <h2>市井傳說：故事是從這裡開始的。</h2>
-			<img src="pictures/pdf_js.png" alt="">
+			<img src="pictures/pdf_js.png">
 		</section>
 	</div></div>
 
@@ -97,7 +97,7 @@
 			<header>
 				<h2>欸～這個 App 在安桌椅(哀鳳)有嗎？</h2>
 			</header>
-			<img src="pictures/app_store_3.png" alt="">
+			<img src="pictures/app_store.png">
       <p class="desc">目前手機 App 將用戶捆綁到特定的作業系統及裝置上。
       <br>網路的發展則相反，網路使內容能在任何裝置上提供相近的體驗。</p>
 		</section>
@@ -108,7 +108,7 @@
 			<header>
         <h2>價格比一比</h2>
 			</header>
-			<div class="img-container"><img src="pictures/price.png" alt=""></div>
+			<div class="img-container"><img src="pictures/price.png"></div>
       <p class="desc">以功能性手機的價格，提供入門至中階的智慧型手機</p>
       <footer>
         <a href="http://www.sogi.com.tw">手機王 - http://www.sogi.com.tw/</a>
@@ -130,7 +130,7 @@
 			<header>
 				<h2>開放原始碼就是真的開放嗎？</h2>
 			</header>
-			<div class="img-container"><img src="pictures/Google.png" alt=""></div>
+			<div class="img-container"><img src="pictures/Google.png"></div>
       <footer>
         <a href="http://yowureport.com/?p=2027">Spencer Liu@有物報告 - http://yowureport.com</a>
       </footer>
@@ -142,7 +142,7 @@
 			<header>
 				<h2>HTML5 - 正在改變 Web 的未來</h2>
 			</header>
-			<div class="img-container"><img src="pictures/html5.png" alt=""></div>
+			<div class="img-container"><img src="pictures/html5.png"></div>
 		</section>
 	</div></div>
 
@@ -193,6 +193,24 @@
 		</section>
 	</div></div>
 
+	<div class="slide" id="FirefoxOSLayer"><div>
+		<section>
+			<header>
+				<h2>真正 Web-based 的平台</h2>
+			</header>
+			<div class="img-container"><img src="pictures/FFOSLayer.png" height="400px"></div>
+		</section>
+	</div></div>
+
+	<div class="slide" id="CompareLayer"><div>
+		<section>
+			<header>
+				<h2>比較一下</h2>
+			</header>
+			<div class="img-container"><img src="pictures/4Layer.png"></div>
+		</section>
+	</div></div>
+
 	<div class="slide shout" id="Boot2Gecko"><div>
 		<section>
 			<header>
@@ -207,26 +225,43 @@
 			<header>
 				<h2>Gecko - Firefox Engine</h2>
 			</header>
-      <div class="img-container"><img src="pictures/browser_component.png" alt=""></div>
+      <div class="img-container"><img src="pictures/browser_component.png"></div>
       <footer>
         <a target="_blank" href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">How Browsers Work</a>
       </footer>
 		</section>
 	</div></div>
 
+
 	<div class="slide" id="Architecture"><div>
 		<section>
 			<header>
 				<h2>Firefox OS 架構</h2>
 			</header>
+			<div class="img-container"><img src="pictures/architecture.png"></div>
 		</section>
 	</div></div>
 
-	<div class="slide" id="Gonk"><div>
+	<div class="slide quote" id="Gonk"><div>
 		<section>
 			<header>
 				<h2>Gonk</h2>
 			</header>
+      <div style="float:left; width: 65%;">
+        <ul>
+          <li>Firefox OS 最底層的「作業系統」</li>
+          <li>Linux kernal 跟硬體抽象層(Hardware Abstraction Layer, HAL)</li>
+          <li>讓 Gecko 能夠順利執行的基礎</li>
+          <li>它的名字來自於 StarWars
+            <ul><li>"Gonk. Gonk." - A GNK droid</li><ul>
+          </li>
+        </ul>
+      </div>
+			<div class="img-container" style="float:left"><img src="pictures/Gonkpromo.jpg" height="300px"></div>
+      <div style="clear:both"></div>
+      <footer>
+        <a href="http://starwars.wikia.com/wiki/GNK_power_droid">StarWar - GNK power droids</a>
+      </footer>
 		</section>
 	</div></div>
 
@@ -235,13 +270,13 @@
 			<header>
 				<h2>Gaia</h2>
 			</header>
-      <div class="img-container"><img src="pictures/gaia.png" alt=""></div>
+      <div class="img-container"><img src="pictures/gaia.png"></div>
 		</section>
 	</div></div>
 
 	<div class="slide" id="GaiaIframe"><div>
 		<section>
-      <div class="img-container"><img src="pictures/iframes.png" alt=""></div>
+      <div class="img-container"><img src="pictures/iframes.png"></div>
 		</section>
 	</div></div>
 
@@ -253,6 +288,42 @@
 			<ul>
 				<li>只要熟悉 web 技術 (HTML/JavaScript/CSS)</li>
       </ul>
+      <br>
+      <div>範例: 振動 + 鈴聲</div>
+      <pre>
+        <code>navigator.vibrate([100, 100, 100]);</code>
+        <code>var ringtonePlayer = new Audio();</code>
+        <code>ringtonePlayer.src = 'ringtone/classic.ogg';</code>
+        <code>ringtonePlayer.play();</code>
+      </pre>
+		</section>
+	</div></div>
+
+	<div class="slide" id="Demo"><div>
+		<section>
+			<header>
+				<h2>Show Time!!</h2>
+			</header>
+			<ul>
+				<li>環境: r2d2b2g (Ready to Deliver to Boot to Gecko)
+          <ul><li>一個 Firefox 附加元件讓你可以玩 Firefox OS</li></ul>
+        </li>
+      </ul>
+      <br>
+      <ul>
+        <li onclick="document.getElementById('cheet').style.display='block';">
+          <strike>惡搞</strike>客製你的桌面圖示
+        </li>
+      </ul>
+      <div id="cheet" style="display:none">
+        * apps/homescreen/style/homescreen.css
+        <pre style="margin-left: 0; white-space:pre">
+        canvas[role=presentation] {
+          border: 1px solid black;
+          border-radius: 20px 0px 20px 0px;
+          background: black;
+        }</pre>
+      </div>
 		</section>
 	</div></div>
 
@@ -275,10 +346,10 @@
           <a href="">Mozilla Central</a>
         </li>
 				<li>
-          <a href="">Bugzilla</a>
+          <a href="https://bugzilla.mozilla.org/">Bugzilla</a>
         </li>
-				<li>
-          <a href="">irc.mozilla.org #gaia, #b2g</a>
+				<li>irc://irc.mozilla.org 
+          <ul><li>channels: #mozilla-taiwan, #gaia, #b2g</li></ul>
         </li>
 			</ul>
 		</section>
