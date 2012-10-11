@@ -11,6 +11,23 @@
 #Cover section header h3 {
     font-size: 30px;
 }
+
+#Cover section .listphoto {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  height: 180px;
+  width: 400px;
+}
+
+#Cover section .listphoto img {
+  width: 120px;
+  height: 180px;
+  position: relative;
+  left: 18%;
+  opacity: 0.5;
+}
+
 #Cover .byline {
   color: #6A7B86;
   text-align: left;
@@ -19,7 +36,7 @@
   right: 20%;
 }
 
-#Cover img {
+#Cover #homescreen img {
 	left:30%;
 }
 
@@ -48,6 +65,10 @@
   top: 40%; 
   color: black;
   font-size: 48px;
+  background: #eee;
+  border-radius: 8px;
+  opacity: 0.8;
+  padding: 5px;
 }
 
 
@@ -57,7 +78,7 @@
 }
 
 #ClosedPlatform .desc {
-  top: 53%; 
+  top: 55%; 
   left: 50%;
   right: 10%;
   background: white;
@@ -75,14 +96,20 @@
 
 #TwoChoices .desc {
   top: 15%; 
-  right: 10%;
+  right: 20%;
 }
-
 
 .img-container img {
   border: 3px solid white;
   border-radius: 8px 8px 8px 8px;
   max-width: 600px;
+}
+
+#GooglePrefers .desc {
+  top: 15%;
+  right: 20%;
+  font-size: 30px;
+  display: none;
 }
 
 #GooglePrefers footer {
@@ -101,12 +128,17 @@
   font-style: normal;
 }
 
-#Boot2Gecko p {
+#Boot2Gecko span {
   color: #C13832;
   position: absolute; 
   top: 58%; 
   right: 20%;
   font-size: 40px;
+}
+
+#Boot2Gecko .desc {
+  left: 23%;
+  top: 55%; 
 }
 
 #Demo strike {
